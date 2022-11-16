@@ -233,6 +233,8 @@ header.sticky{
 .box{
 	background: var(--bg-color);
 	padding: 35px 45px;
+	width:300px;
+	height:300px;
 	border-radius: 8px;
 	transition: all .45s ease;
 }
@@ -274,11 +276,13 @@ header.sticky{
 
 .portfolio-content{
 	display: grid;
+	grid-template-columns:350px 350px 350px;
+	grid-template-rows:350px;
 	/* grid-template-columns: repeat(auto-fit, minmax(350px, auto)); */
-	grid-template-columns: 300px 300px 300px 300px;
 	align-items: center;
-	gap: 2.5rem;
-	margin-top: 5rem;
+	grid-row-gap: 1rem;
+	grid-column-gap: 8rem; 
+	margin-top: 0rem;
 }
 .row{
 	position: relative;
